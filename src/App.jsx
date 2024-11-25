@@ -9,7 +9,14 @@ function Header() {
 }
 
 function App() {
-  return <Header />;
+  return (
+    <div>
+      <Header />
+      <main>
+        <h2>We serve the most delicious food around</h2>
+      </main>
+    </div>
+  );
 }
 
 export default App;
