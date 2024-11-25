@@ -1,15 +1,15 @@
 import "./App.css";
 
-let language = "React";
-// to open emoji keyboard select "Window" button + period
-let moon = "🌙";
+function Header() {
+  return (
+    <header>
+      <h1>Eve's Kitchen</h1>
+    </header>
+  );
+}
 
 function App() {
-  return (
-    <h1>
-      Hello {language.toUpperCase()} {moon} World!
-    </h1>
-  );
+  return <Header />;
 }
 
 export default App;
