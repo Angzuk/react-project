@@ -24,19 +24,21 @@ const dishObjects = items.map((dish, i) => ({
 
 function Main({ dishes }) {
   return (
-    <main>
-      <img 
-        src={chef} 
-        height={300} 
-        alt="Photo of the chef owner" />
-      <ul>
-        {dishes.map((dish) => (
-          <li key={dish.id} style={{ listStyleType: "None" }}>
-            {dish.title}
-          </li>
-        ))}
-      </ul>
-    </main>
+    <>
+      <div>
+        <h2>Welcome to this beautiful restaurant </h2>
+      </div>
+      <main>
+        <img src={chef} height={300} alt="Photo of the chef owner" />
+        <ul>
+          {dishes.map((dish) => (
+            <li key={dish.id} style={{ listStyleType: "None" }}>
+              {dish.title}
+            </li>
+          ))}
+        </ul>
+      </main>
+    </>
   );
 }
 
